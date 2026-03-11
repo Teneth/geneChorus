@@ -1,6 +1,19 @@
-A method for for determining the underlying correlative networks of genes in single cell data. Uses progressive rounds of correlation at separate quality levels to distinguish neighborhoods, the final version of which is termed Visualization Of eXpression groups (VOX), in contrast to TF-node based models. All genes will be classified using this method but any gene with <0.1 R2 to its home network can be filtered as noise. Also generates gene lists for ontology and numerous data displays.
+An R based method for for determining the underlying correlative networks of genes in single cell data. Uses progressive rounds of correlation at separate quality levels to distinguish neighborhoods, the final version of which is termed Visualization Of eXpression groups (VOX), in contrast to TF-node based models. All genes will be classified using this method but any gene with <0.1 R2 to its home network can be filtered as noise. Also generates gene lists for ontology and numerous data displays.
 
 
+Here are the dependencies, everything should be on CRAN. Those can easily work without Seurat if you splice in your dataframe and cell metadata manually, but the function is not currently configured for those inputs.
+```
+library(Seurat)
+library(ggplot2)
+library(dplyr)
+library(randomcoloR)
+library(reshape2)
+library(pheatmap)
+library(RColorBrewer)
+```
+
+
+How to run the workflow:
 
 ```
 source("2026.02.11_geneCHORUS_v12.6_function_script_part1.R")
