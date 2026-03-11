@@ -3,6 +3,8 @@ A method for for determining the underlying correlative networks of genes in sin
 
 
 ```
+source("2026.02.11_geneCHORUS_v12.6_function_script_part1.R")
+
 gene_network_table <- CreateGeneChorusReport(Object_data = your_rds,
                                       output.dir.location = "/u/project/location",
                                       cluster_search = "test", ## "fast" or "test", test will try to guess the right amount of clusters wanted, fast will use a tested cell number scalar
