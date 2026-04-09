@@ -22,7 +22,7 @@ gene_network_table <- CreateGeneChorusReport(Object_data = your_rds,    ### Prov
                                       output.dir.location = "/u/project/location",
                                       cluster_search = "test",      ## "fast" or "test", test will try to guess the right amount of clusters wanted and may be slow, fast will use an approximate cell number scalar
                                       Exp.Name = "ExpName",       ## Just a title for the data
-                                   noise_floor=0.1){      ##Minimum floor for genes to be paired into network. Filteration step, raw networks reported before this is triggered 
+                                   noise_floor=0.1)      ##Minimum floor for genes to be paired into network. Filteration step, raw networks reported before this is triggered 
                                         
 
 ```
